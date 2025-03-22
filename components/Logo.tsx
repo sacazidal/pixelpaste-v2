@@ -4,20 +4,21 @@ import Link from "next/link";
 
 const Logo = () => {
   return (
-    <Link href="/" className="flex items-center gap-2 font-medium">
-      <div className="flex relative h-7 w-7 md:h-8 md:w-8 items-center justify-center rounded-md bg-primary">
+    <div className="flex items-center">
+      <Link href="/" className="flex items-center">
         <Image
-          src={"https://i.ibb.co/fzR9bfmS/dryad.webp"}
-          alt="SM"
-          fill
-          priority
-          className="filter invert dark:invert-0 p-1"
+          src="https://i.ibb.co/fzR9bfmS/dryad.webp"
+          alt="Логотип"
+          width={40}
+          height={40}
         />
-      </div>
-      <span className={`md:text-base text-sm font-bold ${poppins.className}`}>
-        PixelPaste
-      </span>
-    </Link>
+        <span
+          className={`${poppins.className} ml-3 text-xl font-bold text-neutral-900 dark:text-neutral-100`}
+        >
+          PixelPaste
+        </span>
+      </Link>
+    </div>
   );
 };
 export default Logo;

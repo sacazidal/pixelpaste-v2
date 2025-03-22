@@ -25,7 +25,7 @@ const AuthForm = ({
             width={1920}
             height={1080}
             loading="lazy"
-            className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.4]"
+            className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.7]"
           />
         </div>
       </div>

@@ -1,3 +1,5 @@
+import Header from "@/components/Header";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -5,6 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <div className="flex flex-col min-h-screen">
+      <Header />
       <main className="grow">{children}</main>
     </div>
   );
